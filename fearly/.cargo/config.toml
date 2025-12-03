@@ -1,0 +1,8 @@
+[http]
+check-revoke = false
+
+[registry]
+global-credential-providers = ["cargo:token", "cargo:libsecret", "cargo:macos-keychain", "cargo:wincred"]
+
+[registries]
+mje-kellnr = { index = "sparse+http://kellnr.mjenterprise.pl/api/v1/crates/" }

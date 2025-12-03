@@ -1,0 +1,16 @@
+[default]
+address = "0.0.0.0"
+secret_key = "yVYqXFdFB20MIyYLPU6DmwTkr5msMPMt9E1J9WEr/rg="
+limits = { json = "30MiB", form = "50MiB", data-form = "50MiB", file= "50MiB" }
+port = 8000
+forms = "50MiB"
+#
+### set only when the `nyc` profile is selected
+#[nyc]
+#port = 9001
+#
+### set only when compiled in release mode, i.e, `cargo build --release`
+#port = 9999
+#ip_header = false
+#proxy_proto_header = "X-Forwarded-Proto"
+#[release]

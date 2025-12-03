@@ -1,0 +1,43 @@
+database:
+  host: <hostname>
+  port: <port>
+  user: <user>
+  password: <password>
+  namespace: <namespace>
+  database: <database>
+
+directories:
+  media: media/
+
+debug:
+  prints: false
+  cookies: false
+
+session_duration: 604800
+
+# Request are going to be sent to the first api endpoint.
+
+routers:
+  api:
+    - protocol: http
+      hostname: 127.0.0.1
+      port: 8000
+      pathname: "**"
+    - protocol: http
+      hostname: 127.0.0.1
+      port: 8000
+      pathname: "**"
+  web:
+    - protocol: http
+      hostname: 127.0.0.1
+      port: 5173
+      pathname: "**"
+      noport: false
+    - protocol: http
+      hostname: localhost
+      port: 5173
+      pathname: "**"
+  domain: <your_domain_including_https>
+
+  routing:
+    csr: false
