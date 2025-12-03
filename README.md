@@ -21,13 +21,13 @@ Internally, the app is split into two parts:
 ---
 
 ## Repository structure
-
+```
 fearly/
 ├── fearly/ # Backend service (API, logic, processing)
 ├── fearly_frontend/ # Frontend client (UI)
 ├── config.yml # Shared configuration
 └── LICENSE # MIT license
-
+```
 ---
 
 ## Tech used
